@@ -9,7 +9,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 
 private const val OPEN_ANGLE = 120f
-private const val MARK = 10
+private const val MARK = 5
 private val RADIUS = 150f.px
 private val LENGTH = 120f.px
 private val DASH_WIDTH = 2f.px
