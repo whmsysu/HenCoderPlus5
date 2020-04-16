@@ -44,18 +44,18 @@ class SportView(context: Context, attrs: AttributeSet?) :
     paint.textSize = 100.dp
     paint.style = Paint.Style.FILL
     paint.getFontMetrics(fontMetrics)
-    canvas.drawText("aaaa", width / 2f, height / 2f - (fontMetrics.ascent + fontMetrics.descent) / 2f, paint)
+    canvas.drawText("abab", width / 2f, height / 2f - (fontMetrics.ascent + fontMetrics.descent) / 2f, paint)
 
     // 绘制文字2
-    paint.textSize = 150.dp
-    paint.textAlign = Paint.Align.LEFT
-    paint.getFontMetrics(fontMetrics)
-    paint.getTextBounds("abab", 0, "abab".length, bounds)
-    canvas.drawText("abab", - bounds.left.toFloat(), - bounds.top.toFloat(), paint)
+//    paint.textSize = 150.dp
+//    paint.textAlign = Paint.Align.LEFT
+//    paint.getFontMetrics(fontMetrics)
+//    paint.getTextBounds("abab", 0, "abab".length, bounds)
+//    canvas.drawText("abab", - bounds.left.toFloat(), - bounds.top.toFloat(), paint)
 
     // 绘制文字3
-    paint.textSize = 15.dp
-    paint.getTextBounds("abab", 0, "abab".length, bounds)
-    canvas.drawText("abab", - bounds.left.toFloat(), - bounds.top.toFloat(), paint)
+//    paint.textSize = 15.dp
+//    paint.getTextBounds("abab", 0, "abab".length, bounds)
+//    canvas.drawText("abab", - bounds.left.toFloat(), - bounds.top.toFloat(), paint)
   }
 }

@@ -51,7 +51,7 @@ class MultilineTextView(context: Context?, attrs: AttributeSet?) : View(context,
     }
   }
 
-  fun getAvatar(width: Int): Bitmap {
+  private fun getAvatar(width: Int): Bitmap {
     val options = BitmapFactory.Options()
     options.inJustDecodeBounds = true
     BitmapFactory.decodeResource(resources, R.drawable.avatar_rengwuxian, options)
