@@ -17,7 +17,7 @@ class CameraView(context: Context?, attrs: AttributeSet?) : View(context, attrs)
 
   init {
     camera.rotateX(30f)
-    camera.setLocation(0f, 0f, -6 * resources.displayMetrics.density)
+    camera.setLocation(0f, 0f, -8 * resources.displayMetrics.density)
   }
 
   override fun onDraw(canvas: Canvas) {
