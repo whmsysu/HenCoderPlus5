@@ -11,7 +11,8 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.graphics.drawable.toDrawable
 import com.hencoder.animation.dp
 
-private val provinces = listOf("北京市",
+private val provinces = listOf(
+  "北京市",
   "天津市",
   "上海市",
   "重庆市",
@@ -61,7 +62,6 @@ class ProvinceView(context: Context?, attrs: AttributeSet?) : View(context, attr
 
   override fun onDraw(canvas: Canvas) {
     super.onDraw(canvas)
-
     canvas.drawText(province, width / 2f, height / 2f, paint)
   }
 }

@@ -1,7 +1,9 @@
 package com.hencoder.animation
 
+import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.animation.TypeEvaluator
+import android.animation.ValueAnimator
 import android.graphics.PointF
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,34 +15,33 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
-    /*view.animate() // radius
-      .translationX(200.dp) // setTranslationX(10) setTranslationX(20) setTranslationX(40)
-      .translationY(100.dp)
-      .alpha(0.5f)
-      .scaleX(2f)
-      .scaleY(2f)
-      .rotation(90f)
-      .setStartDelay(1000)*/
+//    view.animate() // radius
+//      .translationX(200.dp) // setTranslationX(10) setTranslationX(20) setTranslationX(40)
+//      .translationY(100.dp)
+//      .alpha(0.5f)
+//      .scaleX(2f)
+//      .scaleY(2f)
+//      .rotation(90f).startDelay = 1000
 
-    /*val animator = ObjectAnimator.ofFloat(view, "radius", 150.dp)
-    animator.startDelay = 1000
-    animator.start()*/
+//    val animator = ObjectAnimator.ofFloat(view, "radius", 150.dp)
+//    animator.startDelay = 5000
+//    animator.start()
 
-    /*val bottomFlipAnimator = ObjectAnimator.ofFloat(view, "bottomFlip", 60f)
-    bottomFlipAnimator.startDelay = 1000
-    bottomFlipAnimator.duration = 1000
-
-    val flipRotationAnimator = ObjectAnimator.ofFloat(view, "flipRotation", 270f)
-    flipRotationAnimator.startDelay = 200
-    flipRotationAnimator.duration = 1000
-
-    val topFlipAnimator = ObjectAnimator.ofFloat(view, "topFlip", - 60f)
-    topFlipAnimator.startDelay = 200
-    topFlipAnimator.duration = 1000
-
-    val animatorSet = AnimatorSet()
-    animatorSet.playSequentially(bottomFlipAnimator, flipRotationAnimator, topFlipAnimator)
-    animatorSet.start()*/
+//    val bottomFlipAnimator = ObjectAnimator.ofFloat(view, "bottomFlip", 60f)
+//    bottomFlipAnimator.startDelay = 1000
+//    bottomFlipAnimator.duration = 1000
+//
+//    val flipRotationAnimator = ObjectAnimator.ofFloat(view, "flipRotation", 270f)
+//    flipRotationAnimator.startDelay = 200
+//    flipRotationAnimator.duration = 1000
+//
+//    val topFlipAnimator = ObjectAnimator.ofFloat(view, "topFlip", - 60f)
+//    topFlipAnimator.startDelay = 200
+//    topFlipAnimator.duration = 1000
+//
+//    val animatorSet = AnimatorSet()
+//    animatorSet.playSequentially(bottomFlipAnimator, flipRotationAnimator, topFlipAnimator)
+//    animatorSet.start()
 
     /*val bottomFlipHolder = PropertyValuesHolder.ofFloat("bottomFlip", 60f)
     val flipRotationHolder = PropertyValuesHolder.ofFloat("flipRotation", 270f)
@@ -61,19 +62,19 @@ class MainActivity : AppCompatActivity() {
     animator.duration = 2000
     animator.start()*/
 
-    /*val animator = ObjectAnimator.ofObject(view, "point", PointFEvaluator(), PointF(100.dp, 200.dp))
-    animator.startDelay = 1000
-    animator.duration = 2000
-    animator.start()*/
+//    val animator = ObjectAnimator.ofObject(view, "point", PointFEvaluator(), PointF(100.dp, 200.dp))
+//    animator.startDelay = 5000
+//    animator.duration = 2000
+//    animator.start()
 
     val animator = ObjectAnimator.ofObject(view, "province", ProvinceEvaluator(), "澳门特别行政区")
     animator.startDelay = 1000
     animator.duration = 10000
     animator.start()
-
-    view.animate()
-      .translationY(200.dp)
-      .withLayer()
+//
+//    view.animate()
+//      .translationY(200.dp)
+//      .withLayer()
   }
 
   class PointFEvaluator : TypeEvaluator<PointF> {

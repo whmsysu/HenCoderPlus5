@@ -10,5 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/avatar_rengwuxian" />
+<!--    <com.hencoder.animation.view.CircleView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/view"-->
+<!--        />-->
+<!--    <com.hencoder.animation.view.PointFView-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
+<!--    <com.hencoder.animation.view.CameraView-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
 
 </LinearLayout>

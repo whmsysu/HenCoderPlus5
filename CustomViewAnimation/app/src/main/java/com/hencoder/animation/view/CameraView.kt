@@ -46,8 +46,7 @@ class CameraView(context: Context?, attrs: AttributeSet?) : View(context, attrs)
       camera.rotateX(topFlip)
       camera.applyToCanvas(canvas)
       camera.restore()
-      canvas.clipRect(-BITMAP_SIZE, -BITMAP_SIZE,
-        BITMAP_SIZE, 0f)
+      canvas.clipRect(-BITMAP_SIZE, -BITMAP_SIZE, BITMAP_SIZE, 0f)
       canvas.rotate(flipRotation)
       canvas.translate(-(BITMAP_PADDING + BITMAP_SIZE / 2), -(BITMAP_PADDING + BITMAP_SIZE / 2))
       canvas.drawBitmap(bitmap,

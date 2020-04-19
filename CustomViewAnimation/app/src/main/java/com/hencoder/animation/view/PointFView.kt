@@ -17,7 +17,7 @@ class PointFView(context: Context?, attrs: AttributeSet?) : View(context, attrs)
     }
 
   init {
-    paint.strokeWidth = 20.dp
+    paint.strokeWidth = 50.dp
     paint.strokeCap = Paint.Cap.ROUND
   }
 
