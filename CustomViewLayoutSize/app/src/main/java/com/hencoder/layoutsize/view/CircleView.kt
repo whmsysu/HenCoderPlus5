@@ -6,6 +6,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import com.hencoder.layoutsize.dp
+import java.lang.Integer.max
 
 private val RADIUS = 100.dp
 private val PADDING = 100.dp
@@ -23,6 +24,6 @@ class CircleView(context: Context?, attrs: AttributeSet?) : View(context, attrs)
   override fun onDraw(canvas: Canvas) {
     super.onDraw(canvas)
 
-    canvas.drawCircle(PADDING + RADIUS, PADDING + RADIUS, RADIUS, paint)
+    canvas.drawCircle(width/2f, height/2f, RADIUS, paint)
   }
 }
